@@ -32,7 +32,6 @@ public class StepDefinitions {
 		WebElement email = driver.findElement(By.id("email")); 
 		email.sendKeys(generatedEmail); 
 		Thread.sleep(1000); 
-		driver.quit();
 	}
 
 	@And("I have also entered username into the form")
@@ -93,10 +92,11 @@ public class StepDefinitions {
 	@Then("the confirmation message should be {string} displayed")
 
 	public void the_confirmation_message_should_be_displayed(String error) throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		String actualMessage = driver.getTitle();
 		String expectedMessage = "Success | Mailchimp";
 		assertEquals(expectedMessage, actualMessage);
+		driver.quit();
 	}
 
 	@Then("the error message should be {string} displayed")

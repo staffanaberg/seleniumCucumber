@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class GenerateData {
 
-	String username = "";
-	String email = "";
+	private String username = "";
+	private String email = "";
 
 	// Generation inspired by code from
 	// https://stackoverflow.com/questions/5271598/java-generate-random-number-between-two-given-values
