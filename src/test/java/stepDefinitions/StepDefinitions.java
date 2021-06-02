@@ -24,7 +24,7 @@ public class StepDefinitions {
 	public void i_have_entered_email_into_the_form() throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\emmal\\Documents\\Eclipse\\mydrivers\\chromedriver_win32\\chromedriver.exe");
+				"C:\\chromedriver.exe");
 
 		driver = new ChromeDriver(); 
 		driver.get("https://login.mailchimp.com/signup/"); 
